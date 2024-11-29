@@ -110,11 +110,15 @@ Ensure that all packages are correctly installed.
     - Check that `gymnasium`, `panda-gym`, `stable-baselines3`, and `sb3_contrib` are listed with their respective versions.
 
 ### **6. Interpreter Issues**
-If your IDE such as Visual Stuido Code is showing issues even when all pakcages and edepnedaces have been installed. insure that the correct interpote has be selced. this cna b done by naviagitng to command pallets selection "Python: Select Interpreter" and slecting the correct pythong interoper wiht oyur created enviorment
+If your IDE, such as Visual Studio Code, is showing issues even after all packages and dependencies have been installed, ensure that the correct Python interpreter has been selected. This can be done by navigating to the Command Palette, selecting **"Python: Select Interpreter"**, and choosing the Python interpreter associated with your created environment.
 
-  ![Interpreter Solution](/doc/image/python_interp.gif)
+- **Steps to Select the Correct Interpreter:**
+  1. Open Visual Studio Code.
+  2. Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS) to open the Command Palette.
+  3. Search for and select **"Python: Select Interpreter"**.
+  4. From the list, choose the interpreter that corresponds to your environment (e.g., `ddpg_panda_env`).
 
-
+![Interpreter Solution](/doc/image/python_interp.gif)
 
 
 ## **Additional Resources**
@@ -124,4 +128,3 @@ If your IDE such as Visual Stuido Code is showing issues even when all pakcages 
 
 - **Stable-Baselines3 DDPG Documentation:** [Stable-Baselines3 DDPG](https://stable-baselines3.readthedocs.io/en/master/modules/ddpg.html)
   - Learn about the DDPG algorithm implementation, parameters, and best practices.
-
