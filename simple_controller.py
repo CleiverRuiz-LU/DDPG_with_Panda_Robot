@@ -14,6 +14,7 @@ Rendering Modes:
 # Imports
 import gymnasium as gym  # Gym for defining and simulating virtual environments
 import panda_gym         # Panda robot environment for Gym
+import time              # Module for introducing delays
 
 # Rendering mode: Options are 'human' or 'rgb_array'
 _render_mode = 'human'
@@ -42,6 +43,9 @@ while not done:
 
     # Render the robot's environment (visualize the simulation)
     env.render()
+
+    # Introduce a delay to slow down the simulation
+    time.sleep(0.2)  # Adjust this value as needed (e.g., 0.1 seconds = 100ms)
 
     # Step the environment with the computed action:
     # Returns the next state, reward, done flag, truncated flag, and additional info

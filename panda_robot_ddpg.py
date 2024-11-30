@@ -146,7 +146,7 @@ env = gym.make("PandaReach-v3")
 env = TimeFeatureWrapper(env)
 
 # Number of steps for training (i.e. 1M)
-train_steps = 1000000
+train_steps = 100000
 
 # Create the DDPG model
 model = DDPG(

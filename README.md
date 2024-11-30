@@ -2,7 +2,7 @@
 
 This repository provides step-by-step instructions for setting up the environment required to run Deep Deterministic Policy Gradient (DDPG) algorithms using the Panda robot simulation provided by `panda-gym` and `stable-baselines3`. This setup is ideal for researchers and developers interested in reinforcement learning with robotic manipulators.
 
-# **Table of Contents**
+## **Table of Contents**
 
 1. [Prerequisites](#prerequisites)
 2. [Installation Instructions](#installation-instructions)
@@ -11,17 +11,22 @@ This repository provides step-by-step instructions for setting up the environmen
    - [3. Activate the Environment](#3-activate-the-environment)
    - [4. Install Required Packages](#4-install-required-packages)
    - [5. Verify Installed Packages](#5-verify-installed-packages)
+   - [6. Interpreter Issues](#6-interpreter-issues)
 3. [Additional Resources](#additional-resources)
-
 
 ## **Prerequisites**
 
-- **Operating System:** macOS, Windows, Linux
+- **Operating System:** macOS, Windows, or Linux
 - **Python Version:** 3.9
 - **Conda:** [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://docs.anaconda.com/anaconda/)
 
-Ensure you have administrative privileges to install software on your system
+Ensure you have administrative privileges to install software on your system.
 
+### **Note for Windows Users**  
+1. **Install [Windows C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools)**:
+   - Download and install the required tools.
+   - Issues related to the installation of `panda-gym` often stem from missing or improperly installed C++ Build Tools.
+2. Use **Anaconda PowerShell Prompt** as your terminal for running commands.
 
 ## **Installation Instructions**
 
@@ -29,9 +34,10 @@ Ensure you have administrative privileges to install software on your system
 
 If you haven't already, install **Miniconda** or **Anaconda**. Miniconda is recommended for a lightweight installation.
 
-- **Download Anaconda or Miniconda:**
+- **Download Miniconda or Anaconda:**
   - Visit the [Miniconda Installation Page](https://docs.anaconda.com/miniconda/install/).
-  - Choose the installer for your OS.
+  - Choose the installer for your operating system (macOS, Windows, or Linux).
+
 
 ### **2. Create a Conda Environment**
 
@@ -89,8 +95,9 @@ With the environment activated, install the necessary packages using `pip`.
     - **sb3_contrib:** Community contributions to stable-baselines3.
 
 - **Sample Installation Output:**
-
   ![Package Installation](/doc/image/conda_init_ddpg_robot.png)
+  ![Windows Package Installation](/doc/image/windows/2_create_env.PNG)
+
 
 ### **5. Verify Installed Packages**
 
@@ -119,6 +126,7 @@ If your IDE, such as Visual Studio Code, is showing issues even after all packag
   4. From the list, choose the interpreter that corresponds to your environment (e.g., `ddpg_panda_env`).
 
 ![Interpreter Solution](/doc/image/python_interp.gif)
+![Windows Interpreter Solution](/doc/image/windows/4_python_int.PNG)
 
 
 ## **Additional Resources**
