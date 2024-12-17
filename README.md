@@ -86,6 +86,11 @@ With the environment activated, install the necessary packages using `pip`.
   pip install panda-gym         # Panda robot arm simulation with reinforcement learning interface
   pip install stable-baselines3 # Reinforcement Learning algorithms (e.g., DDPG, SAC)
   pip install sb3_contrib       # Additional tools and algorithms for stable-baselines3
+  pip install opencv-python
+  pip install opencv-python-headless
+  pip install gym-robotics
+
+
   ```
 
   - **Package Descriptions:**
