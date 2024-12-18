@@ -26,7 +26,7 @@ def create_env():
         gym.Env: A configured Gymnasium environment instance.
     """
     # Initialize the PandaPickAndPlace-v3 environment with human visualization
-    env = gym.make("PandaPickAndPlace-v3", render_mode="human")
+    env = gym.make("PandaPickAndPlace-v3", render_mode="rgb_array")
     env = TimeFeatureWrapper(env)
 
     # Reset the environment to its initial state and retrieve the initial observation
@@ -37,7 +37,7 @@ def create_env():
     return env
 
 # Global variables for training configuration
-train_steps = 1_000_000    
+train_steps = 50_000    
 checkpoint_dir = './checkpoints_Pick_and_Place/'
 final_model_path = './models/ddpg_model'
 
