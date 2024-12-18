@@ -1,4 +1,5 @@
 # **DDPG Panda Robot Environment Setup**
+![Title Page](/doc/image/DDPG_ARM.png)
 
 This repository provides step-by-step instructions for setting up the environment required to run Deep Deterministic Policy Gradient (DDPG) algorithms using the Panda robot simulation provided by `panda-gym` and `stable-baselines3`. This setup is ideal for researchers and developers interested in reinforcement learning with robotic manipulators.
 
@@ -74,6 +75,9 @@ Activate the newly created environment to ensure all packages are installed with
   ```bash
   conda deactivate
   ```
+- **Sample Installation Output:**
+  ![MacOS Installation](/doc/image/MacOS_env.gif)
+  ![Windows Installation](/doc/image/Windows_Env.gif)
 
 ### **4. Install Required Packages**
 
@@ -99,11 +103,6 @@ With the environment activated, install the necessary packages using `pip`.
     - **stable-baselines3:** Set of reliable implementations of RL algorithms in PyTorch.
     - **sb3_contrib:** Community contributions to stable-baselines3.
 
-- **Sample Installation Output:**
-  ![Package Installation](/doc/image/conda_init_ddpg_robot.png)
-  ![Windows Package Installation](/doc/image/windows/2_create_env.PNG)
-
-
 ### **5. Verify Installed Packages**
 
 Ensure that all packages are correctly installed.
@@ -113,13 +112,8 @@ Ensure that all packages are correctly installed.
   ```bash
   conda list
   ```
-
-- **Sample Output:**
-
-  ![Conda List](/doc/image/conda_list_ddpg_robot.png)
-
-  - **Verification:**
-    - Check that `gymnasium`, `panda-gym`, `stable-baselines3`, and `sb3_contrib` are listed with their respective versions.
+- **Verification:**
+  - Check that `gymnasium`, `panda-gym`, `stable-baselines3`, and `sb3_contrib` are listed with their respective versions.
 
 ### **6. Interpreter Issues**
 If your IDE, such as Visual Studio Code, is showing issues even after all packages and dependencies have been installed, ensure that the correct Python interpreter has been selected. This can be done by navigating to the Command Palette, selecting **"Python: Select Interpreter"**, and choosing the Python interpreter associated with your created environment.
@@ -131,7 +125,6 @@ If your IDE, such as Visual Studio Code, is showing issues even after all packag
   4. From the list, choose the interpreter that corresponds to your environment (e.g., `ddpg_panda_env`).
 
 ![Interpreter Solution](/doc/image/python_interp.gif)
-![Windows Interpreter Solution](/doc/image/windows/4_python_int.PNG)
 
 
 ## **Additional Resources**
